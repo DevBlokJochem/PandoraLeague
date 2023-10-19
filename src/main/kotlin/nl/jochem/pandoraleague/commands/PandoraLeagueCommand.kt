@@ -92,7 +92,7 @@ class PandoraLeagueCommand: CommandExecutor {
                 sender.msg(prefix + MessagesData.getConfig().removePoints.replace("%punten%", amount.toString()))
             }
             TabCompletion.reload -> {
-                LeagueData.reload(true)
+                LeagueData.hardReload()
                 MessagesData.reload()
                 SettingsData.reload()
                 sender.msg(prefix + MessagesData.getConfig().reload)

@@ -23,7 +23,7 @@ object LeagueData {
         config = GsonBuilder().setPrettyPrinting().create()!!.fromJson(File("${getPath()}/${getFileName()}").readText(), LeaguePoints::class.java)!!
     }
 
-    fun reload(boolean: Boolean) {
+    fun hardReload() {
         reload()
         LeagueManager.onEnable()
     }
