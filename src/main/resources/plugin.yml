@@ -1,0 +1,31 @@
+name: "PandoraLeague"
+version: 1.0.1
+authors: [ BlokJochem ]
+main: nl.jochem.pandoraleague.PandoraLeague
+depend:
+  - KingdomCraft
+  - PlaceholderAPI
+commands:
+  pandoraleague:
+    description: "pandoraleague commando"
+permissions:
+  pandoraleague.give:
+    description: Allows foo command
+    default: op
+  pandoraleague.remove:
+    description: Allows remove command
+    default: op
+  pandoraleague.info:
+    description: Allows info command
+    default: op
+  pandoraleague.reload:
+    description: Allows reload command
+    default: op
+  pandoraleague.*:
+    description: Wildcard permission
+    default: op
+    children:
+      pandoraleague.give: true
+      pandoraleague.remove: true
+      pandoraleague.info: true
+      pandoraleague.reload: true
