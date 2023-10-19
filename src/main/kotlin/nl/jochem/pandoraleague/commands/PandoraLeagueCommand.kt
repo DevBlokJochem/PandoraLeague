@@ -6,7 +6,6 @@ import nl.jochem.pandoraleague.data.LeagueData
 import nl.jochem.pandoraleague.data.MessagesData
 import nl.jochem.pandoraleague.data.SettingsData
 import nl.jochem.pandoraleague.league.LeagueManager
-import nl.jochem.pandoraleague.league.MultiplierManager
 import nl.jochem.pandoraleague.msg
 import org.bukkit.ChatColor
 import org.bukkit.command.Command
