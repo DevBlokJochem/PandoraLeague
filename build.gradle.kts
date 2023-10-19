@@ -15,6 +15,8 @@ buildscript {
 plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
     kotlin("jvm") version "1.9.10"
+
+    `maven-publish`
 }
 val cfg: Map<String, Any> = Yaml().load(File("src/main/resources/plugin.yml").inputStream())
 
